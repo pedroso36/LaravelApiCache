@@ -11,3 +11,8 @@ Route::get('/teste', function () {
 });
 
 Route::get('/courses', [CourseController::class, 'index']);
+Route::get('/courses/{identify}', [CourseController::class, 'show']);
+Route::put('/courses/{identify}', [CourseController::class, 'update']);
+Route::delete('/courses/{identify}', [CourseController::class, 'destroy']);
+
+Route::post('/courses', [CourseController::class, 'store']);
