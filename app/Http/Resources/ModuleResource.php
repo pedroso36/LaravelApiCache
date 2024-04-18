@@ -19,6 +19,7 @@ class ModuleResource extends JsonResource
             'identify' => $this->uuid,
             'title' => $this->name,
             'created_at' => Carbon::make($this->created_at)->format('Y-m-d'),
+            'lessons' => LessonResource::collection($this->whenLoaded('lessons')),
         ];
     }
 }

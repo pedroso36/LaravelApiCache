@@ -21,7 +21,6 @@ class LessonResource extends JsonResource
             'video' => $this->video,
             'description' => $this->description,
             'date' =>  Carbon::make($this->created_at)->format('Y-m-d'),
-
         ];
     }
 }
