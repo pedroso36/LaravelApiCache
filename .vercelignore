@@ -16,6 +16,7 @@
 # Exclui arquivos de ambiente local
 .env
 
+/node_modules
 # Exclui arquivos de teste
 /tests
 
