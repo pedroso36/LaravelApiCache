@@ -1,1 +1,24 @@
+# Exclui a pasta vendor e seu conteúdo
 /vendor
+
+# Exclui arquivos de log do Laravel
+/storage/logs/*.log
+
+# Exclui arquivos temporários de cache do Laravel
+/storage/framework/cache/*
+
+# Exclui arquivos temporários de sessão do Laravel
+/storage/framework/sessions/*
+
+# Exclui arquivos temporários de visualização do Laravel
+/storage/framework/views/*
+
+# Exclui arquivos de ambiente local
+.env
+
+# Exclui arquivos de teste
+/tests
+
+# Exclui arquivos de exemplo ou de documentação
+/docs
+/examples
